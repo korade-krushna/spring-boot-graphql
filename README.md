@@ -38,4 +38,4 @@ sql:
         mode: never
 ```
 ## Test GraphQL
-  Open `http://http://localhost:8080/graphiql` and test the graphql
+  Open <a>http://http://localhost:8080/graphiql</a> and test the graphql
