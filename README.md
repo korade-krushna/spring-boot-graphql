@@ -33,9 +33,9 @@ This project demonstrates how to use GraphQL with Spring Boot, using a MySQL dat
   ```
 2. Shut down the application and set below properties and run again
    ``` yml
-  sql:
-      init:
-        mode: never
+    sql:
+        init:
+          mode: never
   ```
 ## Test GraphQL
   Open `http://http://localhost:8080/graphiql` and test the graphql
