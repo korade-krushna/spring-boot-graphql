@@ -1,0 +1,50 @@
+enum IsOfficial {
+    T
+    F
+}
+
+type Country {
+    code: String!
+    name: String!
+    continent: String!
+    region: String!
+    surfaceArea: Float!
+    indepYear: Int
+    population: Int!
+    lifeExpectancy: Float
+    gnp: Float
+    gnpOld: Float
+    localName: String!
+    governmentForm: String!
+    headOfState: String
+    capital: Int
+    code2: String!
+}
+
+type CountryLanguage {
+    countryCode: String!
+    language: String!
+    isOfficial: IsOfficial!
+    percentage: Float!
+    country: Country!
+}
+
+type City {
+    id: Int!
+    name: String!
+    countryCode: String!
+    district: String!
+    population: Int!
+    country: Country!
+}
+
+type Query {
+    countries: [Country!]!
+    country(name: String!): Country
+    languages: [CountryLanguage!]!
+    countryLanguages(countryCode: String!): [CountryLanguage!]!
+    cities: [City!]!
+    countryCities(countryCode: String!): [City!]!
+    city(id: Int!): City
+
+}
