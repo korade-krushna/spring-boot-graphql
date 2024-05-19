@@ -1,9 +1,7 @@
-package com.amaterasu.graphql_service.controllers;
+package com.amaterasu.graphql_service.resolvers;
 
 import com.amaterasu.graphql_service.entities.City;
-import com.amaterasu.graphql_service.entities.Country;
 import com.amaterasu.graphql_service.service.CityService;
-import com.amaterasu.graphql_service.service.CountryService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
@@ -11,12 +9,12 @@ import org.springframework.stereotype.Controller;
 import java.util.List;
 
 @Controller
-public class CityController {
+public class CityResolver {
 
 
     private final CityService cityService;
 
-    public CityController(CityService cityService) {
+    public CityResolver(CityService cityService) {
         this.cityService = cityService;
     }
 

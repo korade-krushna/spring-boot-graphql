@@ -1,4 +1,4 @@
-package com.amaterasu.graphql_service.controllers;
+package com.amaterasu.graphql_service.resolvers;
 
 import com.amaterasu.graphql_service.entities.Country;
 import com.amaterasu.graphql_service.service.CountryService;
@@ -9,12 +9,12 @@ import org.springframework.stereotype.Controller;
 import java.util.List;
 
 @Controller
-public class CountryController {
+public class CountryResolver {
 
 
     private final CountryService countryService;
 
-    public CountryController(CountryService countryService) {
+    public CountryResolver(CountryService countryService) {
         this.countryService = countryService;
     }
 
